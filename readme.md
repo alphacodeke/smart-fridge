@@ -10,7 +10,7 @@ A web-based shopping and inventory management app that helps users track grocery
 
 ## 🚀 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://alphacodeke.github.io/smart-fridge)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://smartfridge.netlify.app)
 [![Netlify Status](https://img.shields.io/badge/netlify-deployed-success)](https://anthonyke.netlify.app)
 
 ## 🛠️ Tech Stack
@@ -141,7 +141,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](license) file for details.
 
 ## 👨‍💻 Author
 
