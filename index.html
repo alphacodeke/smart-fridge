@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Smart Fridge List | Shopping with Expiry Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <h1>
+                <i class="fas fa-thermometer-half"></i> 
+                Smart Fridge List
+            </h1>
+            <p class="subtitle">Track expiry dates & stop food waste</p>
+        </div>
+
+        <!-- Add Item Section -->
+        <div class="add-section">
+            <div class="input-group">
+                <i class="fas fa-apple-alt"></i>
+                <input type="text" id="itemName" placeholder="Item name (e.g., Milk, Chicken, Salad)" autocomplete="off">
+            </div>
+            <div class="input-group">
+                <i class="fas fa-calendar-alt"></i>
+                <input type="date" id="expiryDate">
+            </div>
+            <div class="input-group">
+                <i class="fas fa-dollar-sign"></i>
+                <input type="number" id="price" placeholder="Price" step="0.01" min="0">
+            </div>
+            <button id="addBtn">
+                <i class="fas fa-plus-circle"></i> Add Item
+            </button>
+        </div>
+
+        <!-- Control Bar -->
+        <div class="controls">
+            <div class="mode-toggle">
+                <button id="storeModeBtn" class="mode-btn">
+                    <i class="fas fa-store"></i> Store Mode
+                </button>
+                <button id="fridgeModeBtn" class="mode-btn active">
+                    <i class="fas fa-snowflake"></i> Fridge Mode
+                </button>
+            </div>
+            <div class="action-buttons">
+                <button id="clearBoughtBtn" class="action-btn">
+                    <i class="fas fa-check-double"></i> Remove Bought
+                </button>
+                <button id="clearAllBtn" class="action-btn danger">
+                    <i class="fas fa-trash-alt"></i> Clear All
+                </button>
+            </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats">
+            <div class="stat-card">
+                <i class="fas fa-list-ul"></i>
+                <span id="itemCount">0</span>
+                <small>Items</small>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-clock"></i>
+                <span id="urgentCount">0</span>
+                <small>Expiring Soon</small>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-dollar-sign"></i>
+                <span id="totalCost">$0.00</span>
+                <small>Total Value</small>
+            </div>
+        </div>
+
+        <!-- Shopping List -->
+        <div class="list-container">
+            <div class="list-header">
+                <span><i class="fas fa-shopping-basket"></i> Your Items</span>
+                <span class="sort-info"><i class="fas fa-arrow-up"></i> Expiring soonest first</span>
+            </div>
+            <ul id="shoppingList"></ul>
+            <div id="emptyState" class="empty-state">
+                <i class="fas fa-fridge"></i>
+                <p>Your fridge is empty</p>
+                <small>Add some items above to get started</small>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by 
+            <a href="https://anthonyke.netlify.app" target="_blank" rel="noopener noreferrer">
+                ALPHACODE SOLUTIONS
+            </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
