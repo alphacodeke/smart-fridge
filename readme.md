@@ -10,7 +10,7 @@ A web-based shopping and inventory management app that helps users track grocery
 
 ## 🚀 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://smartfridge.netlify.app)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://smartfridgelist.netlify.app)
 [![Netlify Status](https://img.shields.io/badge/netlify-deployed-success)](https://anthonyke.netlify.app)
 
 ## 🛠️ Tech Stack
